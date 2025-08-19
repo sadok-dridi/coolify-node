@@ -8,4 +8,6 @@ app.get('/', (req, res) => {
     res.send("Hello from Coolify!");
 });
 
-app.listen(port, "0.0.0.0", () => console.log(`Up on ${port}`));
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
